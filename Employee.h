@@ -2,6 +2,7 @@
 #define EMPLOYEE_H
 
 #include <iostream>
+#include <string>
 #include "person.h"
 
 using namespace std;
@@ -18,7 +19,7 @@ class Employee: public Person {
         Employee(string firstName, string lastName, double salary, const string &email, const string &department);
         string getStartDate() const;
         void setStartDate();
-        string getEmployeeDetails() const;
+        string getDetails();
         bool operator==(const Employee& rhs);
         double getSalary() const;
         void setSalary(double newSalary);

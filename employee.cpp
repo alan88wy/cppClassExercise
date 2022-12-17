@@ -58,7 +58,7 @@ Employee::Employee(string firstName, string lastName, double salary, const strin
     setLastName(lastName);
 }
 
-string Employee::getEmployeeDetails() const {
+string Employee::getDetails() {
 
 //    std::stringstream ss;
 //    ss << std::fixed << std::setprecision(2) << salary;

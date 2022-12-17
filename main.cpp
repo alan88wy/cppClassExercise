@@ -13,8 +13,8 @@ int main()
     Manager q = Manager("Lady", "Q", 20000.00, "q@mi6.gov.uk", "MI6");
     q.setBonus(15000.00);
 
-    cout << j.getEmployeeDetails() << endl;
-    cout << q.getManagerDetails() << endl;
+    cout << j.getDetails() << endl;
+    cout << q.getDetails() << endl;
 
     return 0;
 }

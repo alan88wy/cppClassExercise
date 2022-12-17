@@ -21,6 +21,7 @@ class Person {
         std::string getName() const;
         std::string getLastName() const;
         void setLastName(const std::string &newLastName);
+        virtual string getDetails() = 0;  // Put = 0 to make it pure virtual function
 };
 
 inline string Person::getLastName() const

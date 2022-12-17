@@ -15,7 +15,7 @@ public:
         void setBonus(double newBonus);
         void setFirstName(string newFirstName);
         double getSalary() const;
-        string getManagerDetails() const;
+        string getDetails();
 };
 
 #endif // MANAGER_H

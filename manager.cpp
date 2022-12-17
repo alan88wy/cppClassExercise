@@ -25,7 +25,7 @@ double Manager::getSalary() const
     return Employee::getSalary() + getBonus();
 }
 
-string Manager::getManagerDetails() const {
+string Manager::getDetails() {
 
     //    std::stringstream ss;
     //    ss << std::fixed << std::setprecision(2) << salary;
