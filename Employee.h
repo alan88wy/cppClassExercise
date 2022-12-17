@@ -2,12 +2,9 @@
 #define EMPLOYEE_H
 
 #include <iostream>
-#include "Person.h"
-#include <ctime>
+#include "person.h"
 
 using namespace std;
-
-static int nextId = 0;
 
 class Employee: public Person {
     private:
@@ -18,11 +15,19 @@ class Employee: public Person {
         string startDate;
 
     public:
-        Employee(string firstName, string lastName, double salary, const string &email, const string &deparstmente);
+        Employee(string firstName, string lastName, double salary, const string &email, const string &department);
         string getStartDate() const;
         void setStartDate();
         string getEmployeeDetails() const;
         bool operator==(const Employee& rhs);
+        double getSalary() const;
+        void setSalary(double newSalary);
+        int getId() const;
+        void setId();
+        string getEmail() const;
+        void setEmail(const string &newEmail);
+        string getDepartment() const;
+        void setDepartment(const string &newDepartment);
 };
 
 
