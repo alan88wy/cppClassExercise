@@ -22,7 +22,7 @@ void Manager::setBonus(double newBonus)
 
 double Manager::getSalary() const
 {
-    return Employee::getSalary() + getBonus();
+    return Employee::getSalary();
 }
 
 string Manager::getDetails() {
